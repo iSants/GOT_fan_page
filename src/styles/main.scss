@@ -1,5 +1,7 @@
 @use 'variaveis';
 @use 'hero';
+@use 'about';
+@use 'houses';
 
 * {
     margin: 0;
@@ -7,16 +9,18 @@
     box-sizing: border-box;
 }
 
+
+
 @mixin text($fontSize: 16px) {
   font-size: $fontSize;
   line-height: $fontSize + 10px;
-  color: variaveis.$corTextoPrincipal;
+  color: variaveis.$text-primary;
   font-family: Armana, sans-serif;
 }
 
 @mixin title($fontSize: 40px) {
   @include text($fontSize);
-  color: variaveis.$corTextoSecundario;
+  color: variaveis.$text-secondary;
 }
 
 .text--big {
@@ -45,6 +49,6 @@
 
 .link-text {
   @include text(18px);
-  color: variaveis.$corTextoSecundario;
+  color: variaveis.$text-primary;
   text-decoration: underline;
 }

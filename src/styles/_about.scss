@@ -1,0 +1,56 @@
+@use 'variaveis';
+
+.about {
+    padding: 5.6vw;
+    background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.9)
+  );
+
+    .title {
+        margin-bottom: 40px;
+        padding-left: 200px;
+    }
+
+    &__tab {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        &__button {
+            padding: 12px 28px;
+            background-color: transparent;
+            border: none;
+            color: variaveis.$text-primary;
+            text-transform: uppercase;
+            transition: all 0.3 ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: variaveis.$bg-secondary;
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: 0;
+        
+        &--is--active {
+            display: flex;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            img {
+                max-width: 350px;
+                height: 350px;  
+                border-radius: 14px;
+            }
+        }
+    }
+}

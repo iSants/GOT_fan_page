@@ -1,0 +1,12 @@
+@use 'variaveis';
+
+.houses {
+    background-color: variaveis.$bg-stark;
+    color: variaveis.$stark-primary;
+
+
+    padding-top: 5.6vw;
+    &__stark {
+        display: flex;
+    }
+}

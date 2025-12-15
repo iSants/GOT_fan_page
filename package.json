@@ -585,5 +585,13 @@
     "yargs": "^7.1.2",
     "yargs-parser": "^5.0.1",
     "yauzl": "^2.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iSants/GOT_fan_page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iSants/GOT_fan_page/issues"
+  },
+  "homepage": "https://github.com/iSants/GOT_fan_page#readme"
 }
