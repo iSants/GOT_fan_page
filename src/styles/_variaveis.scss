@@ -1,4 +1,7 @@
-$bg-primary: #0b0f14;      // Noite fria
+$bg-primary: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.9));     // Noite fria
 $bg-secondary: #141922;   // Pedra escura
 $bg-section: #1c222e;     // Muralhas
 

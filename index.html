@@ -37,6 +37,7 @@
 
     <section class="about">
       <h1 class="title">Seja bem vindo ao universo de gelo e fogo</h1>
+      <h3 class="title--small">Livros</h3>
 
       <nav class="about__tab">
         <button
@@ -193,21 +194,38 @@
       </div>
     </section>
 
-    <section class="houses">
-      <h1 class="title">Principais casas</h1>
-      <div class="houses__stark">
-        <h2>Stark</h2>
-        <img src="./src/images/houses/stark.png" alt="">
-        <p class="text">
-          A Casa Stark de Winterfell é uma das mais antigas e nobres casas de
-          Westeros. Sua linhagem remonta aos Primeiros Homens, e eles governam
-          o Norte há milhares de anos. O lema da casa é "O Inverno Está
-          Chegando", refletindo a dureza do clima do Norte e a necessidade de
-          estar sempre preparado para tempos difíceis. Os Stark são conhecidos
-          por sua honra, lealdade e senso de dever, muitas vezes colocando o
-          bem-estar de seu povo acima de seus próprios interesses.
+    <section class="houses houses--stark">
+      <nav class="houses__tab">
+        <button data-tab-button="stark" class="houses__tab__button houses__tab__button--is--active">Stark</button>
+        <button data-tab-button="lannister" class="houses__tab__button">Lannister</button>
+        <button data-tab-button="targaryen" class="houses__tab__button">Targaryen</button>
+      </nav>
+
+      <div class="houses__content houses__content--is--active" data-tab-id="stark">
+        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/stark-video.mp4"></video>
+        <div class="houses__content__overlay">
+          <img src="./src/images/houses/stark2.png" alt="">
+          <h2 class="title">Winter is coming</h2>
+        </div>
+      </div>
+
+      <div class="houses__content" data-tab-id="lannister">
+        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/lannister-video.mp4"></video>
+        <div class="houses__content__overlay">
+          <img src="./src/images/houses/lannister-logo.png" alt="">
+          <h2 class="title">Hear me roar!</h2>
+        </div>
+      </div>
+
+      <div class="houses__content" data-tab-id="targaryen">
+        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/Targaryen-video.mp4"></video>
+        <div class="houses__content__overlay">
+          <img src="./src/images/houses/targaryen.png" alt="">
+          <h2 class="title">Fire and blood</h2>
+        </div>
       </div>
     </section>
+
 
     <script src="./src/main.js"></script>
   </body>

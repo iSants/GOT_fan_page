@@ -1,40 +1,50 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('[data-tab-button]');
-    const tabs = document.querySelectorAll('[data-tab-id]');
+document.addEventListener('DOMContentLoaded', () => {
 
-    function hideAllTabs () {
-        tabs.forEach(t => t.classList.remove('about__content--is--active'));
-    }
+  // ===== ABOUT TABS =====
+  const aboutButtons = document.querySelectorAll('.about__tab__button');
+  const aboutTabs = document.querySelectorAll('.about__content');
 
-    function desactiveButton () {
-        buttons.forEach(b => b.classList.remove('about__tab__button--is--active'))
-    }
+  aboutButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.dataset.tabButton;
 
-// Adiciona listeners em cada botão
-buttons.forEach(button => {
-    button.addEventListener('click', function (event) {
-        // Use currentTarget para garantir que é o botão (independente de onde dentro dele clicaram)
-        const btn = event.currentTarget;
+      aboutButtons.forEach(b => b.classList.remove('about__tab__button--is--active'));
+      aboutTabs.forEach(tab => tab.classList.remove('about__content--is--active'));
 
-        // pega o valor correto do data-attr
-        const abaAlvo = btn.dataset.tabButton;
-
-        // protege caso não tenha valor
-        if (!abaAlvo) return console.warn('Botão sem dataset.tabButton', btn);
-
-        // seleciona a aba alvo (com aspas no seletor)
-        const aba = document.querySelector(`[data-tab-id="${abaAlvo}"]`);
-
-        if (!aba) {
-            console.warn('Aba alvo não encontrada para:', abaAlvo);
-            return;
-        }
-
-        hideAllTabs();
-        desactiveButton();
-
-        aba.classList.add('about__content--is--active');
-        btn.classList.add('about__tab__button--is--active');
+      button.classList.add('about__tab__button--is--active');
+      document
+        .querySelector(`[data-tab-id="${target}"]`)
+        .classList.add('about__content--is--active');
     });
+  });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ===== HOUSES TABS =====
+  const houseButtons = document.querySelectorAll('.houses__tab__button');
+  const houseTabs = document.querySelectorAll('.houses__content');
+  const housesSection = document.querySelector('.houses');
+
+  houseButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.dataset.tabButton;
+
+      houseButtons.forEach(b => b.classList.remove('houses__tab__button--is--active'));
+      houseTabs.forEach(tab => tab.classList.remove('houses__content--is--active'));
+
+      housesSection.classList.remove(
+        'houses--stark',
+        'houses--lannister',
+        'houses--targaryen'
+      );
+
+      button.classList.add('houses__tab__button--is--active');
+      document
+        .querySelector(`[data-tab-id="${target}"]`)
+        .classList.add('houses__content--is--active');
+
+      housesSection.classList.add(`houses--${target}`);
+    });
+  });
 });
