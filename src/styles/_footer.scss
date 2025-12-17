@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$bg-secondary;
+    padding: 20px 0;
+    text-align: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__list {
+            padding-top: 20px;
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+
+            &__item img {
+                width: 30px;
+                height: 30px;
+                filter: invert(1);
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+        }
+        }
+
+        
+        }
+
+        
+    }

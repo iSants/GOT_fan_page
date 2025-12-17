@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+.creator {
+    background-color: variaveis.$bg-section;
+    padding-top: 5.6vh;
+    padding-bottom: 5.6vh;
+    height: auto;
+    
+    h2 {
+            margin: 0 400px;
+        }
+
+
+    &__content {
+        padding-top: 5.6vh;
+        display: flex;
+        align-items: center;
+
+        
+
+        img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 0 40px;
+        }
+    }
+}

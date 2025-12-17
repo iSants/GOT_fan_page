@@ -35,9 +35,46 @@
       </div>
     </section>
 
+  <section class="houses houses--stark">
+      <nav class="houses__tab">
+        <button data-tab-button="stark" class="houses__tab__button houses__tab__button--is--active">Stark</button>
+        <button data-tab-button="lannister" class="houses__tab__button">Lannister</button>
+        <button data-tab-button="targaryen" class="houses__tab__button">Targaryen</button>
+      </nav>
+
+      <div class="houses__content houses__content--is--active" data-tab-id="stark">
+        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/stark-video.mp4"></video>
+        <div class="houses__content__overlay">
+          <img src="./src/images/houses/stark2.png" alt="">
+          <h2 class="houses__content__overlay--stark">Winter is coming</h2>
+          <p class="houses__content__overlay--stark">A Casa Stark de Winterfell é uma das Grandes Casas de Westeros e a principal casa nobre do Norte. Em tempos antigos, eles reinaram como Reis do Inverno, mas desde a Guerra da Conquista tem servido como Protetores do Norte para o Trono de Ferro, enquanto conservam seu título de lordes. Seu assento de poder é Winterfell, uma fortaleza antiga, renomada por sua força.</p>
+        </div>
+      </div>
+
+      <div class="houses__content" data-tab-id="lannister">
+        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/lannister-video.mp4"></video>
+        <div class="houses__content__overlay">
+          <img src="./src/images/houses/lannister-logo.png" alt="">
+          <h2 class="houses__content__overlay--lannister" >Hear me roar!</h2>
+          <p class="houses__content__overlay--lannister">A Casa Lannister de Rochedo Casterly é uma das Grandes Casas nobres dos Sete Reinos e a maior, mais poderosa e importante das Terras Ocidentais. Seu assento de poder é a fortaleza de Rochedo Casterly, embora um ramo menor da casa exista na cidade de Lannisporto.</p>
+        </div>
+      </div>
+
+      <div class="houses__content" data-tab-id="targaryen">
+        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/Targaryen-video.mp4"></video>
+        <div class="houses__content__overlay">
+          <img src="./src/images/houses/targaryen.png" alt="">
+          <h2 class="houses__content__overlay--targaryen">Fire and blood</h2>
+          <p class="houses__content__overlay--targaryen">A Casa Targaryen é uma família nobre, descendentes da velha Valíria, que, por quase trezentos anos, governou os Sete Reinos de Westeros.
+
+Eles eram uma das famílias conhecidas como Senhores de dragões que regiam o Império Valiriano. Alguns anos antes da Perdição de Valíria, os Targaryens abandonaram seu lar em Essos e se assentaram em Pedra do Dragão, uma antiga fortaleza valiriana na costa de Westeros. Lá eles residiram por mais de um século, até que Aegon, o Conquistador e suas irmãs-esposas, Visenya e Rhaenys, iniciaram a Guerra da Conquista.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="about">
       <h1 class="title">Seja bem vindo ao universo de gelo e fogo</h1>
-      <h3 class="title--small">Livros</h3>
+      <h2 class="title--small">Livros</h2>
 
       <nav class="about__tab">
         <button
@@ -194,43 +231,42 @@
       </div>
     </section>
 
-    <section class="houses houses--stark">
-      <nav class="houses__tab">
-        <button data-tab-button="stark" class="houses__tab__button houses__tab__button--is--active">Stark</button>
-        <button data-tab-button="lannister" class="houses__tab__button">Lannister</button>
-        <button data-tab-button="targaryen" class="houses__tab__button">Targaryen</button>
-      </nav>
+    <section class="creator">
+      <h2 class="title">Sobre o criador do universo</h2>
+      <div class="creator__content">
+        
+        <img src="./src/images/george-rr-martin.jpg" alt="George R R Martin">
+        <p class="text--big">
+          George Raymond Richard Martin (Bayonne, 20 de setembro de 1948) é um
+          escritor, roteirista e produtor de televisão norte-americano, mais
+          conhecido por sua série de livros de fantasia épica As Crônicas de Gelo
+          e Fogo, que foi adaptada na série de televisão da HBO Game of Thrones.
+          Martin começou sua carreira escrevendo ficção científica, horror e
+          fantasia para revistas na década de 1970. Ele publicou seu primeiro
+          romance, Dying of the Light, em 1977. Ao longo dos anos 1980 e 1990,
+          ele escreveu vários romances e contos, ganhando reconhecimento por sua
+          habilidade em criar personagens complexos e tramas intrincadas. Em
+          1996, Martin lançou o primeiro livro de As Crônicas de Gelo e Fogo,
+          A Guerra dos Tronos. A série rapidamente ganhou popularidade por sua
+          narrativa envolvente, personagens multifacetados e reviravoltas
+          inesperadas. Martin é conhecido por sua abordagem realista da fantasia,
+          explorando temas como poder, política, moralidade e a natureza humana.
+        </p>
 
-      <div class="houses__content houses__content--is--active" data-tab-id="stark">
-        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/stark-video.mp4"></video>
-        <div class="houses__content__overlay">
-          <img src="./src/images/houses/stark2.png" alt="">
-          <h2 class="houses__content__overlay--stark">Winter is coming</h2>
-          <p class="houses__content__overlay--stark">A Casa Stark de Winterfell é uma das Grandes Casas de Westeros e a principal casa nobre do Norte. Em tempos antigos, eles reinaram como Reis do Inverno, mas desde a Guerra da Conquista tem servido como Protetores do Norte para o Trono de Ferro, enquanto conservam seu título de lordes. Seu assento de poder é Winterfell, uma fortaleza antiga, renomada por sua força.</p>
-        </div>
-      </div>
-
-      <div class="houses__content" data-tab-id="lannister">
-        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/lannister-video.mp4"></video>
-        <div class="houses__content__overlay">
-          <img src="./src/images/houses/lannister-logo.png" alt="">
-          <h2 class="houses__content__overlay--lannister" >Hear me roar!</h2>
-          <p class="houses__content__overlay--lannister">A Casa Lannister de Rochedo Casterly é uma das Grandes Casas nobres dos Sete Reinos e a maior, mais poderosa e importante das Terras Ocidentais. Seu assento de poder é a fortaleza de Rochedo Casterly, embora um ramo menor da casa exista na cidade de Lannisporto.</p>
-        </div>
-      </div>
-
-      <div class="houses__content" data-tab-id="targaryen">
-        <video class="houses__content__video" autoplay muted loop playsinline src="./src/images/houses/Targaryen-video.mp4"></video>
-        <div class="houses__content__overlay">
-          <img src="./src/images/houses/targaryen.png" alt="">
-          <h2 class="houses__content__overlay--targaryen">Fire and blood</h2>
-          <p class="houses__content__overlay--targaryen">A Casa Targaryen é uma família nobre, descendentes da velha Valíria, que, por quase trezentos anos, governou os Sete Reinos de Westeros.
-
-Eles eram uma das famílias conhecidas como Senhores de dragões que regiam o Império Valiriano. Alguns anos antes da Perdição de Valíria, os Targaryens abandonaram seu lar em Essos e se assentaram em Pedra do Dragão, uma antiga fortaleza valiriana na costa de Westeros. Lá eles residiram por mais de um século, até que Aegon, o Conquistador e suas irmãs-esposas, Visenya e Rhaenys, iniciaram a Guerra da Conquista.</p>
-        </div>
       </div>
     </section>
 
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="text">2025 © Copyright - Desenvolvido por Robson Santana</p>
+        <ul class="footer__content__list">
+          <li class="footer__content__list__item"><img src="./src/images/footer/facebook-logo_2504792.png" alt=""></li>
+          <li class="footer__content__list__item"><img src="./src/images/footer/icons8-github-240.png" alt=""></li>
+          <li class="footer__content__list__item"><img src="./src/images/footer/instagram_4494489.png" alt=""></li>
+          <li class="footer__content__list__item"><img src="./src/images/footer/linkedin_4494497.png" alt=""></li>
+        </ul>
+      </div>
+    </footer>
 
     <script src="./src/main.js"></script>
   </body>
